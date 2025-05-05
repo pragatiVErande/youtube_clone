@@ -1,0 +1,114 @@
+
+.signUp{
+    margin-top: 50px;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.signup-card{
+    width: 40%;
+    border: 1px solid;
+    padding: 15px 25px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.5px 0.5px 8px white;
+}
+.signup-title{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+}
+.signup-inputs{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.signup-inp{
+    width: 60%;
+    height: 45px;
+    color: white;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222222;
+}
+.image-upload-signUp{
+   display: flex;
+   gap: 20px;
+}
+.image-upload-signUp-div{
+   width: 100px;
+   height: 100px;
+}
+.image-default-signUp{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.signup-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.signup-btn{
+    color: white;
+    text-decoration: none;
+   width: 25%;
+   border: 1px solid;
+   height: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   font-size: 16px;
+   font-weight: 600px;
+   cursor: pointer;
+   text-decoration: none;
+   padding: auto 30px;
+   &:hover{
+    color: black;
+    background-color: white;
+   }
+}
+
+ /* Media Query */
+
+ @media (max-width:770px){
+
+    .signUp{
+        height: fit-content;
+    }
+    .signup-card{
+        width: 80%;
+        padding: 15px 15px;
+    }
+    .signup-inp{
+        width: 80%;
+    }
+    .image-upload-signUp{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+     }
+ }

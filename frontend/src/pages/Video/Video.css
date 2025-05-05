@@ -1,0 +1,353 @@
+
+.video{
+  margin-top: 50px;
+  display: flex;
+  padding: 30px 0;
+  justify-content: center;
+  background-color: black;
+  color: white;  
+}
+.video-post{
+  width: 100%;
+  max-width: 875px;
+  display: flex;
+  flex-direction: column;
+}
+.video-youtube{
+    width: 100%;
+}
+.video-youtube-video{
+   width: 100%;
+   border-radius: 10px;
+}
+
+
+
+.video-youtube-about{
+    display: flex;
+    flex-direction: column;
+}
+.video-youtube-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.youtube-video-profile-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.youtube-video-profile-block-left{
+    display: flex;
+    gap: 15px;
+}
+.youtube-video-profile-block-left-img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.youtube-video-profile-block-left-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.youtube-video-subview{
+    font-weight: 500;
+    font-size: 16px;
+}
+.youtube-post-profile-name{
+    font-weight: 500;
+    font-size: 16px;
+}
+.youtube-post-profile-subs{
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.subscribe-btn{
+    background-color: white;
+    color: black;
+    padding: 0px 16px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.youtube-video-likeblock{
+    display: flex;
+    gap: 10px;
+    background-color: #a5a5a538;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.youtube-video-likeblock-like{
+    display: flex;
+    gap: 10px;
+}
+.like-number{
+    font-weight: 500;
+}
+.divider{
+    width: 0px;
+    height: 20px;
+    border: 2px solid;
+}
+.youtube-video-about{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #a5a5a538;
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.comment-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.self-comment{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+.self-comment-profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.add-comment{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.add-comment-input{
+   width: 100%;
+   background-color: black;
+   color: white;
+   height: 35px;
+   border: none;
+   font-size: 16px;
+   border-bottom: 1px solid grey;
+   &:focus{
+    outline: none;
+   }
+   &::placeholder{
+    font-size: 16px;
+   }
+}
+.submit-cancel-comment{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+.cancel-comment{
+    padding: 8px 10px;
+    border-radius: 18px;
+    border: 1px solid;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+.others-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.others-comment-section{
+    display: flex;
+    flex-direction: column;
+}
+.others-comment-section-header{
+   display: flex;
+   gap: 10px;
+}
+.channel-name-comment{
+   font-size: 14px;
+   font-weight: 500;
+}
+.comment-timing{
+   font-size: 14px;
+   color: #aaaaaa;
+}
+.video-comment{
+    margin-top: 10px;
+}
+
+
+/* ----------------------------------------- */
+.video-suggestion{
+    width: 100%;
+    max-width: 406px;
+    padding: 10px 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.video-suggestion-block{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+.video-suggestion-thumbnail{
+    width: 168px;
+    height: 94px;
+}
+.video-suggestion-thumbnail-image{
+    width: inherit;
+}
+.video-suggestion-about{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.video-suggestion-about-title{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.video-suggestion-about-profile{
+    color: #ffffff9c;
+    font-size: 12px;
+}
+
+ /* Media Query */
+
+ @media (max-width:770px){
+
+    .video{
+        margin-top: 0px;
+        width: 400px;
+        display: flex;
+        background-color: black;
+    }
+    .video-post{
+        background-color: black;
+        width: 100%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+      .video-youtube-video{
+        margin-left: 15px;
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+     }
+     .video-youtube-title{
+        margin-left: 15px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .youtube-video-profile-block{
+       width: 100%; 
+    }
+    .youtube-video-profile-block-left{
+        display: flex;
+        gap: 10px;
+    }
+    .youtube-video-profile-block-left-img{
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .youtube-post-profile-name{
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .subscribe-btn{
+        padding: 0 6px;
+        height: 26px;
+        font-size: 12px;
+        margin-left: 0;
+    }
+    .youtube-video-likeblock{
+        padding: 0px;
+        gap: 0px;
+        margin-left: 10px;
+    }
+    .youtube-video-likeblock-like{
+        display: flex;
+    }
+    .like-number{
+        font-weight: 500;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+    .divider{
+        width: 0px;
+        height: 20px;
+        border: 2px solid;
+    }
+    .comment{
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .comment-title{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .cancel-comment{
+        padding: 5px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+    .others-comment{
+        margin-left: 15px;
+    }
+    .channel-name-comment{
+        font-size: 14px;
+        font-weight: 600;
+     }
+     .comment-timing{
+        font-size: 12px;
+     }
+     .video-comment{
+        margin-top: 5px;
+    }
+
+    .video-suggestion{
+        background-color: black;
+    }
+      .video-suggestion-block{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 0px;
+    }
+    .video-suggestion-thumbnail{
+        width: 100px;
+        height: 100px;
+    }
+    .video-suggestion-about-title{
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 0px;
+      }
+      .video-suggestion-about-profile{
+        color: #ffffff9c;
+        font-size: 10px;
+    }
+ }

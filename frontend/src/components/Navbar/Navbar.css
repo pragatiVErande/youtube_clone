@@ -1,0 +1,144 @@
+
+.navbar{
+    height: 50px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+}
+
+.navbar-left{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.navbarMenu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+.navbar-youtubeImg{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.navbar_youtubeImage{
+    color: red;
+}
+.navbar_youTubeTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.navbar-center{
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+/* .navbar-searchBox{
+   width: 80%;
+   display: flex;
+}
+.navbar_searchBoxInput{
+   width: 100%;
+   height: 40px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border : 1px solid rgb(155, 153, 153);
+   background-color: #121212;
+   color: white;
+   font-size: 16px;
+   padding-left: 30px;
+   &:focus{
+    outline: none;
+   }
+   & ::placeholder{
+    font-size: 12px;
+   }
+}
+.navbar_searchIconBox{
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    border : 1px solid rgb(92, 90, 90);
+    background-color: rgb(107, 106, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+} */
+ /* -------------------------------------------- */
+
+ .navbar-right{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+.navbar-person{
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar-modal{
+    color: white;
+    position: absolute;
+    top:35px;
+    width: 100%;
+    z-index: 20;
+}
+.navbar-modal-option{
+    background-color: gray;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(33,33,33);
+    }
+}
+
+
+/* Media Query */
+
+@media (max-width:770px){
+
+    .navbar_youTubeTitle{
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+    } 
+    .navbarMenu{
+        width: 30px;
+        height: 30px;
+    }
+    .navbar-center{
+        display: flex;
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 25px;
+      }
+      /* .navbar-searchBox{
+        width: 80%;
+        display: flex;
+     }
+     .navbar_searchBoxInput{
+        width: 100%;
+        height: 25px;
+     } */
+}

@@ -1,0 +1,137 @@
+
+.profile{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 13px 0 13px;
+}
+.profile-page{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    flex: 1;
+    margin-left: 270px;
+    color: white;
+    margin-top: 56px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-page-inactive{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    flex: 1;
+    color: white;
+    margin-top: 56px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-top-section{
+    width: 100%;
+    display: flex;
+    padding: 0 0 20px 0;
+}
+.profile-top-section-profile{
+    width: 15%;
+}
+.profile-top-section-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profile-top-section-about{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0 10px;
+    width: 80%;
+}
+.profile-top-section-name{
+    font-size: 36px;
+    font-weight: 600;
+}
+.profile-top-section-info{
+    font-size: 16px;
+    color: rgb(153,153,153);
+}
+.profile-videos{
+    width: 100%;
+}
+.profile-videos-title{
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: rgb(207,206,206);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(153,153,153);
+}
+.profile-videos-list{
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.profile-video-block{
+    width: 210px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.profile-thumbnail{
+    width: 100%;
+    height: 150px;
+}
+.profile-thumbnail-img{
+    width: 100%;
+    height: 100%;
+}
+.profile-block-detail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.profile-block-detail-name{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.profile-block-detail-about{
+    color: #ababab;
+    font-size: 13px;
+}
+
+ /* Media Query */
+
+ @media (max-width:770px){
+    
+    .home-sideNavbar{
+        display: flex;
+        flex-direction: column;
+        flex: 0.16 1;
+        height: 92vh;
+        overflow-y: auto;
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        width: 150px;
+        padding: 14px;
+        background-color: black;
+        color: white;
+    }
+    .profile-page{
+        margin-left: 150px;
+    }
+    .profile-top-section-name{
+        font-size: 22px;
+    }
+    .profile-top-section-profile{
+        width: 50%;
+    }
+    .profile-videos-list{
+        display: flex;
+        flex-direction: column;
+    }
+ }
